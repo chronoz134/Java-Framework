@@ -10,6 +10,8 @@ C.  Customize the HTML user interface for your customer’s application. The use
     --background color changed to bleached almond.
     --Header title centered
     --Website title changed
+    --Placeholder text added to both filters.
+    --Parts title changed to "Car parts"
 
 Note: Do not remove any elements that were included in the screen. You may add any additional elements you would like or any images, colors, and styles, although it is not required.
 
