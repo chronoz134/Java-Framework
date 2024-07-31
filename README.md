@@ -17,7 +17,8 @@ Note: Do not remove any elements that were included in the screen. You may add a
 
 
 D.  Add an “About” page to the application to describe your chosen customer’s company to web viewers and include navigation to and from the “About” page and the main screen.
-    -aboutus.html: line 5 title for website added "About us"
+    aboutus.html: line 5 title for website added "About us"
+        -line 6 link to css added
         -line 9 h1 added for About us text.
         -line 10 flex container div
         -line 11 card container line 12 h3 header for card 1 titled Our mission.
@@ -32,6 +33,15 @@ D.  Add an “About” page to the application to describe your chosen customer�
         -line 35 header for next section contact us
         -line 36-39 paragraph text added
         -line 40 anchor for contact link added
+    
+    style.css: line 1-3 background color changed to blanchedalmond
+        -line 5-8 flex container added and additional justify added.
+        -line 10-20 item card specifications added for flex boxes.
+        -line 21-25 h1 centered on css added
+        -line 27-30 h3 bottom margin changed.
+        -line 32-35 li margin and border changed
+
+
 
 E.  Add a sample inventory appropriate for your chosen store to the application. You should have five parts and five products in your sample inventory and should not overwrite existing data in the database.
 
