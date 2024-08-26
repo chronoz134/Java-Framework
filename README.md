@@ -17,7 +17,7 @@ Note: Do not remove any elements that were included in the screen. You may add a
 
 
 D.  Add an “About” page to the application to describe your chosen customer’s company to web viewers and include navigation to and from the “About” page and the main screen.
-    aboutus.html: line 5 title for website added "About us"
+    about.html: line 5 title for website added "About us"
         -line 6 link to css added
         -line 9 h1 added for About us text.
         -line 10 flex container div
@@ -33,13 +33,14 @@ D.  Add an “About” page to the application to describe your chosen customer�
         -line 35 header for next section contact us
         -line 36-39 paragraph text added
         -line 40 anchor for contact link added
-    
-    style.css: line 1-3 background color changed to blanchedalmond
+    about.css: line 1-3 background color changed to blanchedalmond
         -line 5-8 flex container added and additional justify added.
         -line 10-20 item card specifications added for flex boxes.
         -line 21-25 h1 centered on css added
         -line 27-30 h3 bottom margin changed.
         -line 32-35 li margin and border changed
+    aboutController
+        -lines 1-11 added spring framework controller for mvc to about us page.
 
 
 

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>About us</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" th:href="@{/css/about.css}">
 </head>
 <body>
     <h1>About Us</h1>
@@ -37,8 +37,10 @@
                 We're always here to help. If you have any questions, need assistance with an order, or want to learn more about our
                 products and services, please don't hesitate to get in touch with us. You can reach us via phone, email, or by visiting our store. We look forward to serving you and helping you keep your vehicle in top condition.
             </p>
-            <a href="insert link here">Contact Us Here</a>
+
         </div>
+
     </div>
+    <a style="justify-content: center" th:href="@{/mainscreen}">Go Back to Homepage Here</a>
 </body>
 </html>
