@@ -41,6 +41,8 @@ D.  Add an “About” page to the application to describe your chosen customer�
         -line 32-35 li margin and border changed
     aboutController
         -lines 1-11 added spring framework controller for mvc to about us page.
+    mainscreen.html
+        lines-20-23 centered header 1 and added an anchor to about us page
 
 
 

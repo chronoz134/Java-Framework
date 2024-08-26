@@ -12,11 +12,16 @@
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <title>Car Part's Shop</title>
+
 </head>
 <body style="background-color: blanchedalmond">
 
-<div class="container">
-    <h1 style="text-align: center">Car Parts Shop</h1>
+<div class="container" >
+    <div style="text-align:center">
+        <h1 style="text-align: center">Car Parts Shop</h1>
+        <a style="text-align:center" th:href="@{/about}">About Us</a>
+    </div>
+
     <hr>
     <h2>Car Parts</h2>
     <form th:action="@{/mainscreen}" >
