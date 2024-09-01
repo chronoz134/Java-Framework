@@ -10,6 +10,7 @@ import com.example.demo.repositories.ProductRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import javax.tools.Tool;
 import java.util.List;
 
 /**
@@ -79,15 +80,27 @@ public class BootStrapData implements CommandLineRunner {
 
 
             InhousePart ip1 = new InhousePart();
-            ip1.setName("Brake Pads");
-            ip1.setId(1001);
-            ip1.setPrice(125.00);
-            ip1.setInv(100);
+            ip1.setName("Spark Plugs");
+            ip1.setId(101);
+            ip1.setPrice(75.00);
+            ip1.setInv(200);
             inhousePartRepository.save(ip1);
             InhousePart inPart = null;
             List<InhousePart> inhouseParts = (List<InhousePart>) inhousePartRepository.findAll();
             for (InhousePart part : inhouseParts) {
-                if (part.getName().equals("out test")) thePart = part;
+                if (part.getName().equals("Spark Plugs")) inPart = part;
+            }
+
+            InhousePart ip2 = new InhousePart();
+            ip2.setName("Headlight Bulb");
+            ip2.setId(104);
+            ip2.setPrice(105.00);
+            ip2.setInv(50);
+            inhousePartRepository.save(ip2);
+            inPart = null;
+            inhouseParts = (List<InhousePart>) inhousePartRepository.findAll();
+            for (InhousePart part : inhouseParts) {
+                if (part.getName().equals("Headlight Bulb")) inPart = part;
             }
 
             System.out.println(thePart.getCompanyName());
@@ -98,10 +111,16 @@ public class BootStrapData implements CommandLineRunner {
             }
 
 
-            Product bicycle = new Product("bicycle", 100.0, 15);
-            Product unicycle = new Product("unicycle", 100.0, 15);
-            productRepository.save(bicycle);
-            productRepository.save(unicycle);
+            Product MainKit = new Product("Maintenance Kit", 250.0, 15);
+            Product OilKit = new Product("Oil Change Kit", 70.0, 30);
+            Product BrakeKit = new Product("Brake Kit", 250.0, 10);
+            Product CarWashKit = new Product("Car Wash Kit", 60.0, 15);
+            Product ToolKit = new Product("Car Tool Kit", 100.0, 25);
+            productRepository.save(MainKit);
+            productRepository.save(OilKit);
+            productRepository.save(BrakeKit);
+            productRepository.save(CarWashKit);
+            productRepository.save(ToolKit);
 
 
             System.out.println("Started in Bootstrap");
