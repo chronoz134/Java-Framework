@@ -71,6 +71,7 @@ G.  Modify the parts to track maximum and minimum inventory by doing the followi
         -line 31-33 added fields for min and max inventory with min annotation for spring
         -line 47-48, 56-57 added constructors for min and max inv.
         -line 104-120 added getters and setters for both min and max inv
+        -line 130-133 method to validate inventory is within min and max parameters
     bootstrapdata.java 
         lines 108-109, 94-95, 79-80, 64-65, 47-48: added min and max inventory values to sample inventory.
     outsourcedpartform.html
@@ -79,6 +80,8 @@ G.  Modify the parts to track maximum and minimum inventory by doing the followi
     insourcedpartform.html
         lines 9-10 added styling for webpage
         lines 26-30 added additional fields for form on min and max inventory
+    application.properties
+        line 6 updated to showcase file rename of database
 
 H.  Add validation for between or at the maximum and minimum fields. The validation must include the following:
 •  Display error messages for low inventory when adding and updating parts if the inventory is less than the minimum number of parts.

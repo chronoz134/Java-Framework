@@ -127,6 +127,9 @@ public abstract class Part implements Serializable {
 
         return id == part.id;
     }
+    public boolean isInvValid() {
+        return this.inv >= this.minInv && this.inv <= this.maxInv;
+    }
 
     @Override
     public int hashCode() {
