@@ -82,6 +82,11 @@ G.  Modify the parts to track maximum and minimum inventory by doing the followi
         lines 26-30 added additional fields for form on min and max inventory
     application.properties
         line 6 updated to showcase file rename of database
+    addinhousepartcontroller.java
+        line40-59 refactored code to accomodate min and max inv logic and validation for errors
+    addoutsourcedpartcontroller
+        line40-59 refactored code to accomodate min and max inv logic and validation for errors
+
 
 H.  Add validation for between or at the maximum and minimum fields. The validation must include the following:
 •  Display error messages for low inventory when adding and updating parts if the inventory is less than the minimum number of parts.
