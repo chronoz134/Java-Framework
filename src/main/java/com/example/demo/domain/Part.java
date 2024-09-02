@@ -28,6 +28,9 @@ public abstract class Part implements Serializable {
     double price;
     @Min(value = 0, message = "Inventory value must be positive")
     int inv;
+    @Min(value = 0, message = "Minimum inventory must be at least 0")
+    private int minInv;
+    private int maxInv;
 
     @ManyToMany
     @JoinTable(name="product_part", joinColumns = @JoinColumn(name="part_id"),
@@ -37,17 +40,21 @@ public abstract class Part implements Serializable {
     public Part() {
     }
 
-    public Part(String name, double price, int inv) {
+    public Part(String name, double price, int inv, int minInv, int maxInv) {
         this.name = name;
         this.price = price;
         this.inv = inv;
+        this.minInv = minInv;
+        this.maxInv = maxInv;
     }
 
-    public Part(long id, String name, double price, int inv) {
+    public Part(long id, String name, double price, int inv, int minInv, int maxInv) {
         this.id = id;
         this.name = name;
         this.price = price;
         this.inv = inv;
+        this.minInv = minInv;
+        this.maxInv = maxInv;
     }
 
     public long getId() {
@@ -93,6 +100,24 @@ public abstract class Part implements Serializable {
     public String toString(){
         return this.name;
     }
+
+    @Min(value = 0, message = "Minimum inventory must be at least 0")
+    public int getMinInv() {
+        return minInv;
+    }
+
+    public void setMinInv(@Min(value = 0, message = "Minimum inventory must be at least 0") int minInv) {
+        this.minInv = minInv;
+    }
+
+    public int getMaxInv() {
+        return maxInv;
+    }
+
+    public void setMaxInv(int maxInv) {
+        this.maxInv = maxInv;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

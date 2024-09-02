@@ -44,6 +44,9 @@ public class BootStrapData implements CommandLineRunner {
             os1.setId(1001);
             os1.setPrice(125.00);
             os1.setInv(100);
+            os1.setMinInv(1);
+            os1.setMaxInv(300);
+
             outsourcedPartRepository.save(os1);
             OutsourcedPart thePart = null;
             List<OutsourcedPart> outsourcedParts = (List<OutsourcedPart>) outsourcedPartRepository.findAll();
@@ -58,6 +61,8 @@ public class BootStrapData implements CommandLineRunner {
             os2.setId(1002);
             os2.setPrice(155.99);
             os2.setInv(50);
+            os2.setMinInv(1);
+            os2.setMaxInv(300);
             outsourcedPartRepository.save(os2);
             thePart = null;
             outsourcedParts = (List<OutsourcedPart>) outsourcedPartRepository.findAll();
@@ -71,6 +76,8 @@ public class BootStrapData implements CommandLineRunner {
             os3.setInv(20);
             os3.setPrice(329.50);
             os3.setId(1003);
+            os3.setMinInv(1);
+            os3.setMaxInv(300);
             outsourcedPartRepository.save(os3);
             thePart = null;
             outsourcedParts = (List<OutsourcedPart>) outsourcedPartRepository.findAll();
@@ -84,6 +91,8 @@ public class BootStrapData implements CommandLineRunner {
             ip1.setId(101);
             ip1.setPrice(75.00);
             ip1.setInv(200);
+            ip1.setMinInv(1);
+            ip1.setMaxInv(300);
             inhousePartRepository.save(ip1);
             InhousePart inPart = null;
             List<InhousePart> inhouseParts = (List<InhousePart>) inhousePartRepository.findAll();
@@ -96,6 +105,8 @@ public class BootStrapData implements CommandLineRunner {
             ip2.setId(104);
             ip2.setPrice(105.00);
             ip2.setInv(50);
+            ip2.setMinInv(1);
+            ip2.setMaxInv(300);
             inhousePartRepository.save(ip2);
             inPart = null;
             inhouseParts = (List<InhousePart>) inhousePartRepository.findAll();
