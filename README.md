@@ -89,9 +89,12 @@ G.  Modify the parts to track maximum and minimum inventory by doing the followi
 
 
 H.  Add validation for between or at the maximum and minimum fields. The validation must include the following:
-•  Display error messages for low inventory when adding and updating parts if the inventory is less than the minimum number of parts.
-•  Display error messages for low inventory when adding and updating products lowers the part inventory below the minimum.
-•  Display error messages when adding and updating parts if the inventory is greater than the maximum.
+        addinhousepartcontroller.java
+            lines-43-50 slight logic alter for validation
+        addoutsourcedpartcontroller
+            lines 43-53 slight logic alter for validation
+        enufpartsvalidator.java
+            lines 28-54 added method and logic for parts validation.
 
 
 I.  Add at least two unit tests for the maximum and minimum fields to the PartTest class in the test package.
