@@ -103,6 +103,4 @@ I.  Add at least two unit tests for the maximum and minimum fields to the PartTe
             lines 159-173 added tests for min and max inv.
 
 J.  Remove the class files for any unused validators in order to clean your code.
-
-
-K.  Demonstrate professional communication in the content and presentation of your submission.
+        deletepartvalidator.java deleted as it is unused.
