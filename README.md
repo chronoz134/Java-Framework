@@ -86,7 +86,9 @@ G.  Modify the parts to track maximum and minimum inventory by doing the followi
         line40-59 refactored code to accomodate min and max inv logic and validation for errors
     addoutsourcedpartcontroller
         line40-59 refactored code to accomodate min and max inv logic and validation for errors
-
+    mainscreen.html
+        lines 42-45, 52-54 added min and max inventory counters on webpage
+        
 
 H.  Add validation for between or at the maximum and minimum fields. The validation must include the following:
         addinhousepartcontroller.java
