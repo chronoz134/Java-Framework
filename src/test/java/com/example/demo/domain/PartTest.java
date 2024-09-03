@@ -2,10 +2,10 @@ package com.example.demo.domain;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import java.util.HashSet;
 import java.util.Set;
-
+import com.example.demo.domain.InhousePart;
+import com.example.demo.domain.Part;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
@@ -155,5 +155,20 @@ class PartTest {
         partIn.setId(1l);
         partOut.setId(1l);
         assertEquals(partIn.hashCode(),partOut.hashCode());
+    }
+    @Test
+    public void testMinInventory() {
+        Part part = new InhousePart();
+        part.setMinInv(5);
+        boolean isValid = part.isInvValid();
+        assertEquals(false, isValid, "Inventory should be invalid when below the minimum.");
+    }
+    @Test
+    public void testMaxInventory() {
+        Part part = new InhousePart();
+        part.setMaxInv(10);
+        part.setInv(11);
+        boolean isValid = part.isInvValid();
+        assertEquals(false, isValid, "Inventory should be invalid when above the maximum.");
     }
 }
